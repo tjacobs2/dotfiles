@@ -1,6 +1,7 @@
 " set tabstops and auto-indent to be 2 spaces
-set tabstop=4
-set sw=4
+set tabstop=2
+" set sw=2
+" set expandtab
 
 " allow mouse scrolling
 set mouse=a
