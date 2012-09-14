@@ -28,13 +28,18 @@ plugins=(git osx svn)
 
 source $ZSH/oh-my-zsh.sh
 
-__git_files () {
-	wanted files expl 'local files' _files
+#disable autocorrection
+unsetopt correct_all
+
+__git_files () { 
+    _wanted files expl 'local files' _files 
 }
 
 # Customize to your needs...
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:~/bin:/Users/timjacobs/Dropbox/TODO:/Library/PostgreSQL/9.1/bin
+export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:~/bin:~/Dropbox/TODO/
 
+export PYTHONPATH=/Users/tim/bin/pymol_scripts:/Users/tim/python_library:/Applications/MacPyMOL.app/pymol/
+
+export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-unsetopt correct_all
