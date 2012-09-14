@@ -1,0 +1,41 @@
+ _ feedback push
+_ feedback disable,all,everything
+
+# ~/.pymolrc for JK laptop
+
+alias clear, mstop; mclear; hide all
+alias nogui, set internal_gui=0
+alias gui, set internal_gui=1
+alias shiny, set spec_power=250; set spec_refl=1.5; set antialias=1; ray
+alias grab, os.system("open -a Grab")
+alias stop, quit
+alias exit, quit
+alias white, bg_color white; set depth_cue=0; set ray_trace_fog=0
+
+from pymol import cmd
+
+import sys
+#sys.path.append("/Users/plato/pymol_scripts/")
+#sys.path.append("/Users/flo/scripts/python_scripts/pymol_scripts")
+
+#print "about to run ShowDesign.py"
+#run /Users/plato/pymol_scripts/ShowDesign.py
+
+
+# END COMMANDS
+_ feedback pop
+
+print "Done apl PyMOL setup (stolen from florian, stolen from jk, stolen from ben)"
+#run /home/andrew/pymol_scripts/ShowDesign.py
+#print "RAN ShowDesign.py"
+run /Users/timjacobs/bin/pymolScripts/ShowInterface.py
+print "RAN ShowInterface.py"
+run /Users/timjacobs/bin/pymolScripts/color_obj.py
+print "RAN color_obj.py"
+run /Users/timjacobs/bin/pymolScripts/seqFinder.py
+print "RAN seqFinder.py"
+#run /Users/timjacobs/rosetta/python_scripts/pymol_scripts/rosetta_tools.py
+#print "Ran rosetta_tools.py"
+#run /home/andrew/pymol_scripts/AntibodyInterface.py
+#print "RAN sasa_radii.py"
+#run /home/andrew/pymol_scripts/sasa_radii.py
