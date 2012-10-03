@@ -19,13 +19,13 @@ import sys
 # END COMMANDS
 _ feedback pop
 
-run ~/bin/pymolScripts/ShowInterface.py
+run ~/dotfiles/scripts/pymol/ShowInterface.py
 print "RAN ShowInterface.py"
 
-run ~/bin/pymolScripts/color_obj.py
-print "RAN color_obj.py"
+#run ~/dotfiles/scripts/pymol/color_obj.py
+#print "RAN color_obj.py"
 
-run ~/bin/pymolScripts/seqFinder.py
+run ~/dotfiles/scripts/pymol/seqFinder.py
 print "RAN seqFinder.py"
 
 #run /Users/timjacobs/rosetta/python_scripts/pymol_scripts/rosetta_tools.py
