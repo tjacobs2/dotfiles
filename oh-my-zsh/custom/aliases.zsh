@@ -16,14 +16,15 @@ alias t='~/Dropbox/TODO/todo.sh -d ~/Dropbox/TODO/todo.cfg'
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
 alias lambot="ssh -l tjacobs2 lambot.med.unc.edu"
 #alias contador="mosh tjacobs2@contador.med.unc.edu"
-alias contador="ssh tjacobs2@contador.med.unc.edu"
-alias garin="ssh tim@garin.med.unc.edu"
+alias contador="mosh tjacobs2@contador.med.unc.edu"
+alias garin="mosh tim@garin.med.unc.edu"
 alias killdevil="ssh -l tjacobs2 killdevil.unc.edu"
 alias bakerlab="ssh -l tjacobs2 fw.bakerlab.org"
 alias kure="ssh -l tjacobs2 kure.unc.edu"
 alias vi="vim"
 alias rm="rm -i"
 alias df="df -h"
+alias du="du -h"
 
 PS1="%{$fg[red]%}###MAC:%{$reset_color%}%{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}###
 >%{$reset_color%}"
