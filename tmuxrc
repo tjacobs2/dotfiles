@@ -1,3 +1,0 @@
-#change prefix to control+m
-set -g prefix C-m
-bind C-m send-prefix
