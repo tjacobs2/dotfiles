@@ -56,8 +56,8 @@ plugins=(git osx svn)
 
 source $ZSH/oh-my-zsh.sh
 
-bindkey -v
-bindkey "^R" history-incremental-search-backward
+bindkey -e
+#bindkey "^R" history-incremental-search-backward
 
 #disable autocorrection
 unsetopt correct_all
