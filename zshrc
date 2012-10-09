@@ -26,6 +26,18 @@ if [[ `hostname -s` = killdevil* ]]; then
 	#: ----------------------------------------
 fi
 
+if [[ `hostname -s` = killdevil* ]]; then
+	tmux set -g status-bg white
+fi
+
+if [[ `hostname -s` = garin* ]]; then
+	tmux set -g status-bg cyan
+fi
+
+if [[ `hostname -s` = contador* ]]; then
+	tmux set -g status-bg green
+fi
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
