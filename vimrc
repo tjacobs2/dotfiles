@@ -44,8 +44,12 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "use pathogen to manage plugins
 call pathogen#infect()
+
+":sh to call zsh terminal in new pane
 map :sh :ConqueTermSplit zsh
 
+"line numbers
+"set nu
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
