@@ -11,6 +11,7 @@ TODOTXT_DEFAULT_ACTION=ls
 export TODOTXT_DEFAULT_ACTION
 
 alias t='~/Dropbox/TODO/todo.sh -d ~/Dropbox/TODO/todo.cfg'
+alias pepo='psql -h killdevil-epo1.its.unc.edu -U postgres'
 
 # User specific aliases and functions
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"

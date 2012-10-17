@@ -1,5 +1,5 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_cnt =9
 let g:netrw_dirhist_1='/Users/timjacobs/.hgext'
 let g:netrw_dirhist_2='/Users/timjacobs/rosetta_hg_blessed/rosetta_source/cmake/build'
 let g:netrw_dirhist_3='/Users/timjacobs/rosetta_hg_blessed/rosetta_source/cmake/temp'
@@ -8,3 +8,4 @@ let g:netrw_dirhist_5='/Users/timjacobs/rosetta/rosetta_source/src/basic/options
 let g:netrw_dirhist_6='/Users/timjacobs/rosetta/rosetta_source/external/include/Eigen/src'
 let g:netrw_dirhist_7='/Users/tim/dotfiles/python_library'
 let g:netrw_dirhist_8='/Users/tim/dotfiles/oh-my-zsh'
+let g:netrw_dirhist_9='/home/tjacobs2/.mbsync'

@@ -160,9 +160,17 @@ set noswapfile
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" Controls number of columns text is indented with reindent operations
 set shiftwidth=4
+
+" 1 tab is two columns wide
 set tabstop=4
+
+" delete 4 spaces at a time
+set softtabstop=4
+
+"auto indent
+set autoindent
 
 " Linebreak on 500 characters
 set lbr
@@ -170,7 +178,7 @@ set tw=500
 
 set ai "Auto indent
 set si "Smart indent
-set wrap "Wrap lines
+set nowrap "Wrap lines
 
 
 """"""""""""""""""""""""""""""
