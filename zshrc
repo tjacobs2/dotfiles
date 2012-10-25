@@ -75,6 +75,9 @@ source $ZSH/oh-my-zsh.sh
 bindkey -e
 #bindkey "^R" history-incremental-search-backward
 
+# only space for word delimiter
+export WORDCHARS="*?_-.[]~=/&;!#$%^(){}<>"
+
 #disable autocorrection
 unsetopt correct_all
 
