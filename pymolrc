@@ -1,33 +1,30 @@
- _ feedback push
+_ feedback push
 _ feedback disable,all,everything
 
-# ~/.pymolrc for JK laptop
-
+#Aliases
 alias clear, mstop; mclear; hide all
 alias nogui, set internal_gui=0
 alias gui, set internal_gui=1
 alias shiny, set spec_power=250; set spec_refl=1.5; set antialias=1; ray
-alias grab, os.system("open -a Grab")
-alias stop, quit
 alias exit, quit
 alias white, bg_color white; set depth_cue=0; set ray_trace_fog=0
 
-from pymol import cmd
+#Ray tracing
+set ray_opaque_background, false
+set ray_shadow, false 
 
+from pymol import cmd
 import sys
 
-# END COMMANDS
-_ feedback pop
+run ~/dotfiles/pymol_scripts/find_seq.py
+run ~/dotfiles/pymol_scripts/super_all.py
+run ~/dotfiles/pymol_scripts/select_mutated.py
+run ~/dotfiles/pymol_scripts/display_scripts.py
 
-run ~/dotfiles/scripts/pymol/ShowInterface.py
-print "RAN ShowInterface.py"
-
-#run ~/dotfiles/scripts/pymol/color_obj.py
+#run ~/dotfiles/pymol_scripts/color_obj.py
 #print "RAN color_obj.py"
 
-run ~/dotfiles/scripts/pymol/seqFinder.py
-print "RAN seqFinder.py"
-
+#run ~/dotfiles/pymol_scripts/ShowInterface.py
 #run /Users/timjacobs/rosetta/python_scripts/pymol_scripts/rosetta_tools.py
 #print "Ran rosetta_tools.py"
 #run /home/andrew/pymol_scripts/AntibodyInterface.py
@@ -38,3 +35,5 @@ print "RAN seqFinder.py"
 #run /home/andrew/pymol_scripts/ShowDesign.py
 #print "RAN ShowDesign.py"
 #
+# END COMMANDS
+_ feedback pop
