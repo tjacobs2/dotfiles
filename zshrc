@@ -26,6 +26,8 @@ if [[ `hostname -s` = killdevil* ]]; then
 	#: ----------------------------------------
 fi
 
+~/.osx
+
 tmux set -g status-fg black
 if [[ `hostname -s` = killdevil* ]]; then
 	tmux set -g status-bg white
