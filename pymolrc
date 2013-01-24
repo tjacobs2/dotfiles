@@ -9,6 +9,9 @@ alias shiny, set spec_power=250; set spec_refl=1.5; set antialias=1; ray
 alias exit, quit
 alias white, bg_color white; set depth_cue=0; set ray_trace_fog=0
 
+#default fetch location, so as not to fill the home directory
+set fetch_path, ~/pdbs
+
 #Ray tracing
 set ray_opaque_background, false
 set ray_shadow, false 
