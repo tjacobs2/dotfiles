@@ -1,6 +1,9 @@
 _ feedback push
 _ feedback disable,all,everything
 
+#3 button mouse
+config_mouse three_button
+
 #Aliases
 alias clear, mstop; mclear; hide all
 alias nogui, set internal_gui=0
