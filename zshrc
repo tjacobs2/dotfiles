@@ -10,6 +10,7 @@ fi
 
 if [[ `hostname -s` = contador* ]]; then
 	tmux set -g status-bg green
+	tmux set -g status-fg black
 fi
 
 # Path to your oh-my-zsh configuration.
