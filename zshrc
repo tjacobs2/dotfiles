@@ -1,43 +1,16 @@
-#killdevil specific module loading
-if [[ `hostname -s` = killdevil* ]]; then
-	#: -----------------------------------------
-	#: Start of section that is NOT customizable.
-	#: Do not remove or modify
-	if [ -f /etc/profile.modules ]
-	then
-	       . /etc/profile.modules
-		module load null mvapich_gcc python/2.7.1 git/1.7.1
-	fi
-	
-	case "$0" in
-	          -sh|sh|*/sh)  modules_shell=sh ;;
-	       -ksh|ksh|*/ksh)  modules_shell=ksh ;;
-	       -zsh|zsh|*/zsh)  modules_shell=zsh ;;
-	    -bash|bash|*/bash)  modules_shell=bash ;;
-	esac
-	module() { eval `/nas02/apps/Modules/$MODULE_VERSION/bin/modulecmd $modules_shell $*`; }
-	
-	# Source global definitions
-	if [ -f /etc/bashrc ]; then
-	        . /etc/bashrc
-	fi
-	#: Do not remove or modify
-	#: End of section that is NOT customizable.
-	#: ----------------------------------------
-fi
-
 #tmux set -g status-fg black
 #if [[ `hostname -s` = killdevil* ]]; then
 #	tmux set -g status-bg white
 #fi
 #
-#if [[ `hostname -s` = garin* ]]; then
-#	tmux set -g status-bg cyan
-#fi
-#
-#if [[ `hostname -s` = contador* ]]; then
-#	tmux set -g status-bg green
-#fi
+if [[ `hostname -s` = koblet* ]]; then
+	tmux set -g status-bg cyan
+	tmux set -g status-fg black
+fi
+
+if [[ `hostname -s` = contador* ]]; then
+	tmux set -g status-bg green
+fi
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
