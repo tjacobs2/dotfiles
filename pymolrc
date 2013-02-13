@@ -13,7 +13,7 @@ alias exit, quit
 alias white, bg_color white; set depth_cue=0; set ray_trace_fog=0
 
 #default fetch location, so as not to fill the home directory
-set fetch_path, ~/pdbs
+#set fetch_path, ~/pdbs
 
 #Ray tracing
 set ray_opaque_background, false
@@ -42,4 +42,5 @@ run ~/dotfiles/pymol_scripts/display_scripts.py
 #print "RAN ShowDesign.py"
 #
 # END COMMANDS
+
 _ feedback pop
