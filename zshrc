@@ -65,7 +65,7 @@ function git_prompt_info() {
 }
 
 # Customize to your needs...
-export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:~/bin:~/Dropbox/TODO/
+export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin:~/Dropbox/TODO/
 
 export PYTHONPATH=/Users/tim/bin/pymol_scripts:/Users/tim/python_library:/Applications/MacPyMOL.app/pymol/
 
