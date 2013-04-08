@@ -1,0 +1,16 @@
+[user]
+	name = Tim Jacobs
+	email = timjacobs2@gmail.com
+[alias]
+	ci = commit
+	glog = log --graph --oneline --decorate --all
+	add-rename = rm $(git ls-files --deleted)
+[color]
+	ui = true
+[core]
+	editor = vim
+	whitespace = trailing-space,space-before-tab
+[merge]
+	tool = vimdiff
+[diff]
+	tool = vimdiff

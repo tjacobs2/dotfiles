@@ -24,5 +24,16 @@ def cleanup():
 	cmd.hide( 'sticks', 'elem H' )
 	cmd.hide( 'lines', 'elem H' )
 
+def mainchain():
+	#hide waters
+	cmd.hide("(solvent and (all))")
+	#hide cartoon
+	cmd.hide("cartoon")
+	cmd.hide("lines","not(name ca,c,n,o,h)")
+	#show mainchain sticks
+	cmd.show("sticks","((byres (all))&n;ca,c,n,o,h)")
+	util.color_chains("(all and elem c)",_self=cmd)
+
 cmd.extend("chain_cleanup", chain_cleanup )
 cmd.extend("cleanup", cleanup)
+cmd.extend("mainchain", mainchain )
