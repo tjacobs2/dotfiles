@@ -1,4 +1,4 @@
-ROSETTA3_DB=$HOME/rosetta/rosetta_database
+ROSETTA3_DB=$HOME/workspace/devel_rosetta/database
 export ROSETTA3_DB
 
 MATLAB_USE_USERPATH=1
