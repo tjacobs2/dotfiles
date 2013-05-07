@@ -3,7 +3,7 @@
 	email = timjacobs2@gmail.com
 [alias]
 	ci = commit
-	glog = log --graph --oneline --decorate
+	glog = log --graph --decorate
 	add-rename = rm $(git ls-files --deleted)
 [color]
 	ui = true
@@ -14,3 +14,5 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+[push]
+	default = current
