@@ -48,6 +48,11 @@ call pathogen#infect()
 ":sh to call zsh terminal in new pane
 map :sh :ConqueTermSplit zsh
 
+"Fix vimdiff colorscheme
+if &diff
+	colorscheme evening
+endif
+
 "line numbers
 "set nu
 
@@ -155,7 +160,7 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-"set expandtab
+set expandtab
 
 " Be smart when using tabs ;)
 set smarttab
@@ -166,7 +171,7 @@ set shiftwidth=4
 " 1 tab is two columns wide
 set tabstop=4
 
-" delete 4 spaces at a time
+" delete 3 spaces at a time
 set softtabstop=4
 
 "auto indent

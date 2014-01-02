@@ -22,6 +22,7 @@ set ray_shadow, false
 from pymol import cmd
 import sys
 
+run ~/dotfiles/pymol_scripts/color_chains.py
 run ~/dotfiles/pymol_scripts/find_seq.py
 run ~/dotfiles/pymol_scripts/super_all.py
 run ~/dotfiles/pymol_scripts/select_mutated.py

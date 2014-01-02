@@ -4,7 +4,7 @@
 [alias]
 	ci = commit
 	glog = log --graph --decorate
-	add-rename = rm $(git ls-files --deleted)
+	oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
 [color]
 	ui = true
 [core]
@@ -14,5 +14,9 @@
 	tool = vimdiff
 [diff]
 	tool = vimdiff
+[difftool]
+	prompt = false
 [push]
 	default = current
+[receive]
+	denyCurrentBranch = warn
