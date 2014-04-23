@@ -67,14 +67,11 @@ function git_prompt_info() {
 # Customize to your needs...
 export PATH=/usr/local/bin:$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/X11/bin:~/bin:~/Dropbox/TODO
 
-export PYTHONPATH=/Users/tim/bin/pymol_scripts:/Users/tim/python_library:/Applications/MacPyMOL.app/pymol/
+export PYTHONPATH=/Users/tim/bin/pymol_scripts:/Users/tjacobs2/workspace/rosetta_extras/tools/python_pdb_structure:/Applications/MacPyMOL.app/pymol/
 
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export GITHUB_KEY=b9e20d0e8c5c7aa9512d
-export GITHUB_SECRET=074074233098db975313ff9b96bc9cd8bbb943fd
-export GITHUB_TEAM_ID=owners
-
+source ~/.nvm/nvm.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

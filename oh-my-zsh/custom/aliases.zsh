@@ -12,6 +12,7 @@ export TODOTXT_DEFAULT_ACTION
 
 alias t='~/Dropbox/TODO/todo.sh -d ~/Dropbox/TODO/todo.cfg'
 alias pepo='psql -h killdevil-epo1.its.unc.edu -U postgres'
+alias pymol='/Applications/MacPyMOL.app/Contents/MacOS/MacPyMOL'
 
 # User specific aliases and functions
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
@@ -20,6 +21,7 @@ alias lambot="ssh -l tjacobs2 lambot.med.unc.edu"
 alias contador="mosh tjacobs2@rosettadesign.med.unc.edu"
 alias garin="mosh tim@garin.med.unc.edu"
 alias koblet="mosh tjacobs2@152.19.81.194"
+alias wiggins="mosh tjacobs2@152.19.81.132"
 alias killdevil="ssh -l tjacobs2 killdevil.unc.edu"
 alias bakerlab="ssh -l tjacobs2 fw.bakerlab.org"
 alias kure="ssh -l tjacobs2 kure.unc.edu"

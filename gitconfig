@@ -10,6 +10,7 @@
 [core]
 	editor = vim
 	whitespace = trailing-space,space-before-tab
+	autocrlf = input
 [merge]
 	tool = vimdiff
 [diff]
@@ -20,3 +21,5 @@
 	default = current
 [receive]
 	denyCurrentBranch = warn
+[credential]
+	helper = cache --timeout=3600
