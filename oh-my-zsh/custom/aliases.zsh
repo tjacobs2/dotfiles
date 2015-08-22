@@ -12,7 +12,7 @@ export TODOTXT_DEFAULT_ACTION
 
 alias t='~/Dropbox/TODO/todo.sh -d ~/Dropbox/TODO/todo.cfg'
 alias pepo='psql -h killdevil-epo1.its.unc.edu -U postgres'
-alias pymol='/Applications/MacPyMOL.app/Contents/MacOS/MacPyMOL'
+#alias pymol='/Applications/MacPyMOL.app/Contents/MacOS/MacPyMOL'
 
 # User specific aliases and functions
 alias myip="ifconfig | grep 'inet ' | grep -v 127.0.0.1 | cut -d\   -f2"
@@ -30,6 +30,7 @@ alias vi="vim"
 alias rm="rm -i"
 alias df="df -h"
 alias du="du -h"
+alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 
 PS1="%{$fg[red]%}###MAC:%{$reset_color%}%{$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}###
 >%{$reset_color%}"
